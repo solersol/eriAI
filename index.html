@@ -1,0 +1,680 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARGARET AI</title>
+    <meta name="description" content="Where ideas take flight">
+    <meta property="og:image" content="images/logo.png">
+    <link rel="icon" href="images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&amp;family=DM+Sans:opsz@9..40&amp;family=Nunito:wght@600&amp;family=Poppins:wght@500&amp;display=swap" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
+    <script src="js/aos.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bblack: '#0B0B0B',
+                        gold: "#fde993"
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="js/chart.umd.min.js"></script>
+    <script src="js/chartjs-plugin-datalabels.min.js" referrerpolicy="no-referrer"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/axios.min.js"></script>
+</head>
+<body class="bg-bblack text-white">
+
+    <video preload="auto" autoplay="autoplay" loop="" muted="" playsinline="" class="-z-20 bg-white hidden videoBg fixed w-full h-full object-cover opacity-10">
+        <source src="https://www.margaretai.com/media/logo.mp4">
+    </video>
+
+    <!-- LOADER -->
+    <div id="loading-animation" class="flex-center" style="width: 100%; height: 100vh; overflow: hidden; display: none;">
+        <img src="images/MARGARET.gif" class="h-[90px] object-contain" style="object-fit: contain; width: 200px;">
+    </div>
+
+    <nav class="stickyNav">
+        <div class="flex-col flex-center w-full max-w-[1000px] mx-auto p-2 navDivDiv navguy rounded-f">
+            <div class="w-full flex items-center justify-between nunito rounded-full bg-sgray-500 bg-opacity-1 px-4 py-2">
+                <a href="https://www.MARGARET.ai" class="flex items-center">
+                    <img src="images/logo.png" alt="logo" class="h-8 md:h-5">
+                    <p class="ml-1.5 text-xl nunito text-gold">MARGARET</p>
+                </a>
+                <div class="flex items-center justify-center gap-4">
+                    
+                    <a href="https://x.com/margaret_ai" class="">
+                        <img src="images/X_logo.png" alt="twitter" class="md:h-6 h-5 object-contain">
+                    </a>
+                        <a href="https://www.twitch.tv/eriAI" class="">
+                        <img src="images/twitch.png" alt="twitter" class="md:h-6 h-5 object-contain">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+d
+    <div class="homepage">
+        <!-- HERO -->
+        <section class="relative w-full h-screen">
+            <img src="images/MARGARETd.png" alt="hero" class="-z-20 absolute w-full h-full object-cover opacity-20">
+            <div class="relative w-full md:h-screen h-[88vh]">
+                <video preload="auto" autoplay="autoplay" loop="" muted="" playsinline="" class="-z-20 absolute w-full h-full object-cover">
+                    <source src="https://www.margaretai.com/media/logo.mp4">
+                </video>
+                <div class="bottom-10 md:bottom-20 absolute w-full">
+                    <div class="flex-center max-w-[950px] mx-auto flex-col gap-5 w-full">
+                        <div class="w-full flex items-center justify-center md:justify-between md:gap-10 gap-5">
+                            <a href="https://www.twitch.tv/margaret_ai" class="a aB py-2 md:px-10 text-white block text-center dmsans text-sm relative w-full max-w-[140px] md:max-w-[220px] shadows-md shadow-gold bg-bblack bg-opacity-80">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                TWITCH LIVESTREAM
+                            </a>
+
+                            <a href="/3d/" class="a aB py-2 md:px-10 text-white block text-center dmsans text-sm relative w-full max-w-[140px] md:max-w-[220px] shadows-md shadow-gold bg-bblack bg-opacity-80">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                3D WORLD AI
+                            </a>
+                        </div>
+                        <div class="w-full flex items-center justify-center md:justify-between md:gap-10 gap-5">
+                            <a href="https://dexscreener.com/solana/" class="a aB py-2 md:px-10 text-white block text-center dmsans text-sm relative w-full max-w-[140px] md:max-w-[220px] shadows-md shadow-gold bg-bblack bg-opacity-80">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                DEXSCREENER
+                            </a>
+                            <a href="https://dexscreener.com/solana/AK3fVzxVTbupkFPZuoEHKqqbcsSmzGPdUzdwVh8Mpump" class="a aB py-2 md:px-10 text-white block text-center dmsans text-sm relative w-full max-w-[140px] md:max-w-[220px] shadows-md shadow-gold bg-bblack bg-opacity-80">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Buy MARGARET
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- ABOYUT & USECASES -->
+        <div class="radial">
+            
+            <!-- ABOUT -->
+            <section class="flex flex-col md:flex-row items-center justify-between w-[90s%] px-5 py-10 max-w-[1000px] mx-auto">
+                <img src="images/MARGARET.gif" alt="MARGARET" class="w-[85%] m-5 max-w-[350px] object-contain">
+                <div class="p-5">
+                    <p class="dmsans md:text-[16px] text-sm text-gray-300 max-w-[500px]">MARGARET AI is dedicated to democratizing access to cutting-edge AI technology. Our platform caters to businesses, developers, and individuals, offering intuitive tools and resources to harness the power of AI for diverse applications. By fostering a culture of collaboration and inclusivity, we're not only driving innovation but also creating opportunities for individuals to thrive in the rapidly evolving AI landscape. 
+                    <br><br>
+                    Join us in revolutionizing the way we interact with artificial intelligence, and together, let's build a future where AI benefits everyone.</p>
+                </div>
+            </section>
+            <div class="bg-[#66666646] opacity-70 h-[1px] w-[90%] mx-auto"></div>
+        
+            <!-- USE CASES & PARTNERS -->
+            <section class="w-full raidalup md:pb-20">
+                <!-- USE CASES -->
+                <div class="flex-center flex-col md:flex-row w-full max-w-[1200px] mx-auto relative min-h-screen">
+                    <div class="blober md:absolute left-0 top-10">
+                        <div class="relative">
+                            <div class="blob relative">
+                                <div class="centered-abs-x z-20 top-20 flex flex-col mx-10 md:mx-0 md:text-center">
+                                    <h1 class="nunito text-lg font-extrabold">Chatbot Development and Customer Support</h1>
+                                    <p class="mt-2 opacity-55 dmsans text-[11px]">
+                                        MARGARET AI can be utilized to develop advanced chatbots for customer support and interaction. By leveraging its natural language processing (NLP) capabilities, MARGARET AI-powered chatbots can understand and respond to user queries, provide personalized assistance, and automate routine tasks. Businesses can deploy MARGARET AI chatbots on their websites, messaging platforms, and mobile apps to enhance customer engagement, improve response times, and streamline support operations.</p>
+                                </div>
+                                <div class="w-screen md:w-auto flex justify-end">
+                                    <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="w-[75%] md:w-auto" width="100%" id="blobSvg">
+                                        <defs>
+                                            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                                <stop offset="0%" style="stop-color: #666666;"></stop>
+                                                <stop offset="100%" style="stop-color: #0B0B0B;"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                        <path fill="url(#gradient)">
+                                            <animate attributeName="d" dur="10000ms" repeatCount="indefinite" values="M451.5,299Q420,348,383.5,383Q347,418,298.5,441.5Q250,465,198,447.5Q146,430,111,390Q76,350,44.5,300Q13,250,47.5,201.5Q82,153,111.5,107.5Q141,62,195.5,57Q250,52,297,69.5Q344,87,392.5,113.5Q441,140,462,195Q483,250,451.5,299Z;
+                                                    M455.5,306Q444,362,400,398Q356,434,303,456.5Q250,479,202,448Q154,417,104,390Q54,363,48.5,306.5Q43,250,52,195.5Q61,141,99.5,98.5Q138,56,194,59.5Q250,63,308,56.5Q366,50,394.5,100Q423,150,445,200Q467,250,455.5,306Z;
+                                                    M471,306.5Q445,363,401.5,400Q358,437,304,452.5Q250,468,203,440.5Q156,413,100.5,391Q45,369,52.5,309.5Q60,250,73.5,203Q87,156,123,124.5Q159,93,204.5,55.5Q250,18,311,28Q372,38,415,84Q458,130,477.5,190Q497,250,471,306.5Z;
+                                                    M438,300Q422,350,385.5,386Q349,422,299.5,451Q250,480,193.5,462.5Q137,445,104,399Q71,353,39,301.5Q7,250,37.5,197.5Q68,145,97,89.5Q126,34,188,18.5Q250,3,300,40Q350,77,389,112Q428,147,441,198.5Q454,250,438,300Z;
+                                                    M459.5,309.5Q456,369,402,394.5Q348,420,299,459Q250,498,198.5,463.5Q147,429,94.5,399.5Q42,370,40,310Q38,250,62.5,203Q87,156,119,117.5Q151,79,200.5,53.5Q250,28,312,31.5Q374,35,394.5,95Q415,155,439,202.5Q463,250,459.5,309.5Z;
+                                                    M451.5,299Q420,348,383.5,383Q347,418,298.5,441.5Q250,465,198,447.5Q146,430,111,390Q76,350,44.5,300Q13,250,47.5,201.5Q82,153,111.5,107.5Q141,62,195.5,57Q250,52,297,69.5Q344,87,392.5,113.5Q441,140,462,195Q483,250,451.5,299Z"></animate>
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blober md:absolute bottom-[0px] left-[35%]">
+                        <div class="relative">
+                            <div class="blob relative">
+                                <div class="centered-abs-x z-20 top-20 flex flex-col mx-10 md:mx-0 md:text-center">
+                                    <h1 class="nunito text-lg font-extrabold">Image Generation and Enhancement</h1>
+                                    <p class="mt-2 opacity-55 dmsans text-[11px]">
+                                        MARGARET AI can generate and enhance images for various purposes, such as marketing campaigns, social media posts, and website content. Using generative adversarial networks (GANs) and other advanced algorithms, MARGARET AI can create realistic and high-quality images from scratch or modify existing images to meet specific requirements. This includes tasks like generating product visuals, creating custom graphics, and enhancing photo quality through image restoration and manipulation techniques.</p>
+                                </div>
+                                <div class="w-screen md:w-auto flex justify-start">
+                                    <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="w-[75%] md:w-auto" width="100%" id="blobSvg">
+                                        <defs>
+                                            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                                <stop offset="0%" style="stop-color: #666666;"></stop>
+                                                <stop offset="100%" style="stop-color: #0B0B0B;"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                        <path fill="url(#gradient)">
+                                            <animate attributeName="d" dur="10000ms" repeatCount="indefinite" values="M451.5,299Q420,348,383.5,383Q347,418,298.5,441.5Q250,465,198,447.5Q146,430,111,390Q76,350,44.5,300Q13,250,47.5,201.5Q82,153,111.5,107.5Q141,62,195.5,57Q250,52,297,69.5Q344,87,392.5,113.5Q441,140,462,195Q483,250,451.5,299Z;
+                                                    M455.5,306Q444,362,400,398Q356,434,303,456.5Q250,479,202,448Q154,417,104,390Q54,363,48.5,306.5Q43,250,52,195.5Q61,141,99.5,98.5Q138,56,194,59.5Q250,63,308,56.5Q366,50,394.5,100Q423,150,445,200Q467,250,455.5,306Z;
+                                                    M471,306.5Q445,363,401.5,400Q358,437,304,452.5Q250,468,203,440.5Q156,413,100.5,391Q45,369,52.5,309.5Q60,250,73.5,203Q87,156,123,124.5Q159,93,204.5,55.5Q250,18,311,28Q372,38,415,84Q458,130,477.5,190Q497,250,471,306.5Z;
+                                                    M438,300Q422,350,385.5,386Q349,422,299.5,451Q250,480,193.5,462.5Q137,445,104,399Q71,353,39,301.5Q7,250,37.5,197.5Q68,145,97,89.5Q126,34,188,18.5Q250,3,300,40Q350,77,389,112Q428,147,441,198.5Q454,250,438,300Z;
+                                                    M459.5,309.5Q456,369,402,394.5Q348,420,299,459Q250,498,198.5,463.5Q147,429,94.5,399.5Q42,370,40,310Q38,250,62.5,203Q87,156,119,117.5Q151,79,200.5,53.5Q250,28,312,31.5Q374,35,394.5,95Q415,155,439,202.5Q463,250,459.5,309.5Z;
+                                                    M451.5,299Q420,348,383.5,383Q347,418,298.5,441.5Q250,465,198,447.5Q146,430,111,390Q76,350,44.5,300Q13,250,47.5,201.5Q82,153,111.5,107.5Q141,62,195.5,57Q250,52,297,69.5Q344,87,392.5,113.5Q441,140,462,195Q483,250,451.5,299Z"></animate>
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blober md:absolute -top-20 right-0">
+                        <div class="relative">
+                            <div class="blob">
+                                <div class="centered-abs-x z-20 top-20 flex flex-col mx-10 md:mx-0 md:text-center">
+                                    <h1 class="nunito text-lg font-extrabold">Video Generation and Editing</h1>
+                                    <p class="mt-2 opacity-55 dmsans text-[11px]">
+                                        MARGARET AI can assist in video generation and editing processes, enabling businesses and content creators to produce engaging and professional-looking videos. MARGARET AI can generate video content from text or scripts, create animated graphics and visual effects, and automate video editing tasks such as trimming, cropping, and adding captions. Additionally, MARGARET AI can enhance video quality, remove background noise, and optimize videos for different platforms and resolutions, making it a valuable tool for video production and marketing efforts.</p>
+                                </div>
+                                <div class="w-screen md:w-auto flex justify-end mt-10 md:mt-0">
+                                    <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="w-[75%] md:w-auto" width="100%" id="blobSvg">
+                                        <defs>
+                                            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                                <stop offset="0%" style="stop-color: #666666;"></stop>
+                                                <stop offset="100%" style="stop-color: #0B0B0B;"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                        <path fill="url(#gradient)">
+                                            <animate attributeName="d" dur="10000ms" repeatCount="indefinite" values="M451.5,299Q420,348,383.5,383Q347,418,298.5,441.5Q250,465,198,447.5Q146,430,111,390Q76,350,44.5,300Q13,250,47.5,201.5Q82,153,111.5,107.5Q141,62,195.5,57Q250,52,297,69.5Q344,87,392.5,113.5Q441,140,462,195Q483,250,451.5,299Z;
+                                                    M455.5,306Q444,362,400,398Q356,434,303,456.5Q250,479,202,448Q154,417,104,390Q54,363,48.5,306.5Q43,250,52,195.5Q61,141,99.5,98.5Q138,56,194,59.5Q250,63,308,56.5Q366,50,394.5,100Q423,150,445,200Q467,250,455.5,306Z;
+                                                    M471,306.5Q445,363,401.5,400Q358,437,304,452.5Q250,468,203,440.5Q156,413,100.5,391Q45,369,52.5,309.5Q60,250,73.5,203Q87,156,123,124.5Q159,93,204.5,55.5Q250,18,311,28Q372,38,415,84Q458,130,477.5,190Q497,250,471,306.5Z;
+                                                    M438,300Q422,350,385.5,386Q349,422,299.5,451Q250,480,193.5,462.5Q137,445,104,399Q71,353,39,301.5Q7,250,37.5,197.5Q68,145,97,89.5Q126,34,188,18.5Q250,3,300,40Q350,77,389,112Q428,147,441,198.5Q454,250,438,300Z;
+                                                    M459.5,309.5Q456,369,402,394.5Q348,420,299,459Q250,498,198.5,463.5Q147,429,94.5,399.5Q42,370,40,310Q38,250,62.5,203Q87,156,119,117.5Q151,79,200.5,53.5Q250,28,312,31.5Q374,35,394.5,95Q415,155,439,202.5Q463,250,459.5,309.5Z;
+                                                    M451.5,299Q420,348,383.5,383Q347,418,298.5,441.5Q250,465,198,447.5Q146,430,111,390Q76,350,44.5,300Q13,250,47.5,201.5Q82,153,111.5,107.5Q141,62,195.5,57Q250,52,297,69.5Q344,87,392.5,113.5Q441,140,462,195Q483,250,451.5,299Z"></animate>
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- PARTNERS -->
+                <div class="md:flex-col flex-row flex-center gap-10 max-w-[900px] mx-auto w-full p-5 mt-10">
+                    <div class="flex items-center justify-between w-full flex-col md:flex-row gap-10">
+                        <img src="images/NVIDIA.png" alt="NVIDIA" class="w-[100px] md:w-[150px] object-cover">
+                        <img src="images/dexview.png" alt="dexview" class="w-[100px] md:w-[150px] object-cover">
+                        <img src="images/PHANTOM.png" alt="PHANTOM" class="w-[100px] md:w-[150px] object-cover">
+                    </div>
+                    <div class="flex items-center justify-between w-full flex-col md:flex-row gap-10">
+                        <img src="images/OPENAI.png" alt="OPENAI" class="w-[100px] md:w-[150px] object-cover">
+                        <img src="images/PINKSLAE.png" alt="PINKSLAE" class="w-[100px] md:w-[150px] object-cover">
+                        <img src="images/RAYDIUM.png" alt="RAYDIUM" class="w-[100px] md:w-[150px] object-cover">
+                    </div>
+                </div>
+            </section>
+        </div>
+    
+        <!-- ROADMAP -->
+        <section id="roadmap" class="max-w-[1100px] mx-auto w-full flex-center flex-col pt-10 pb-20">
+            <p class="monts text-center font-extrabold text-4xl mt-10">Roadmap</p>
+            <div class="w-[100%] max-w-[800px] mx-auto md:mt-10">
+                <div class="flex flex-col md:flex-row items-start justify-between w-full mt-5">
+                    <!-- LINE SECTION MOBILE -->
+                    <div class="relative flex-1 p-5 mb-10 w-[90%] mx-auto md:hidden">
+                        <div class="pm1">
+                            <div class="w-[32px] h-[32px] border-2 border-gold rounded-lg absolute top-[5px] left-[35px] z-10 bg-bblack flex-center">
+                                <div class="pm1d w-[20px] h-[20px] rounded-sm bg-gold"></div>
+                            </div>
+                            <div class="border-b w-full border-gold flex items-start relative gap-2"></div>
+                            <h1 class="text-sm nunito mt-5 text-gold">Phase One</h1>
+                        </div>
+    
+                        <div class="pm2">
+                            <div class="w-[30px] h-[30px] border-2 border-gold rounded-lg absolute right-[160px] top-[6px] bg-bblack flex-center">
+                                <div class="pm2d w-[10px] h-[10px] rounded-sm bg-gold"></div>
+                            </div>
+                            <h1 class="text-sm nunito absolute right-[140px] top-[40px] text-gold">Phase Two</h1>
+                        </div>
+                        
+                        <div class="pm3">
+                            <div class="w-[30px] h-[30px] border-2 border-gold rounded-lg absolute right-[30px] top-[6px] bg-bblack flex-center">
+                                <div class="pm3d w-[10px] h-[10px] rounded-sm bg-gold"></div>
+                            </div>
+                            <h1 class="text-sm nunito absolute right-[10px] top-[40px] text-gold">Phase Three</h1>
+                        </div>
+    
+                    </div>
+    
+                    <!-- LINE SECTION -->
+                    <div class="relative flex-1 mt-10 hidden md:block">
+                        <div class="border-l h-[200px] border-gold flex justify-between flex-col items-start relative gap-2">
+                            <div class="p1">
+                                <div class="w-[32px] h-[32px] border-2 border-gold rounded-lg absolute -left-[16px] bg-bblack flex-center cursor-pointer">
+                                    <div class="p1d w-[20px] h-[20px] rounded-md bg-gold"></div>
+                                </div>
+                                <h1 class="text-sm nunito ml-7 text-gold mt-2">Phase One</h1>
+                            </div>
+                            <div class="p2">
+                                <div class="w-[30px] h-[30px] border-2 border-gold rounded-lg absolute -left-[15px] bg-bblack flex-center cursor-pointer">
+                                    <div class="p2d w-[10px] h-[10px] rounded-sm bg-gold"></div>
+                                </div>
+                                <h1 class="text-sm nunito ml-7 text-gold mt-2">Phase Two</h1>
+                            </div>
+                            <div class="p3">
+                                <div class="w-[30px] h-[30px] border-2 border-gold rounded-lg absolute -left-[15px] bg-bblack flex-center cursor-pointer">
+                                    <div class="p3d w-[10px] h-[10px] rounded-sm bg-gold"></div>
+                                </div>
+                                <h1 class="text-sm nunito ml-7 text-gold mt-2">Phase Three</h1>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- BOX SECTION -->
+                    <div class="w-[90%] max-w-[600px] mx-auto">
+                        <div class="mt-5 rounded-xl border-gold border-opacity-20 radialroad mx-auto w-full border py-10 px-7 flex md:items-start justify-between flex-wrap gap-10 shadow-xl shadow-[#28282837]">
+                            <!-- PHASE 1 -->
+                            <div class="phaseOne flex items-start justify-between w-full md:w-[350px] relative flex-col">
+                                <div class="flex-center gap-2">
+                                    <div class="w-[25px] h-[25px] border-2 border-gold rounded-lg flex-center">
+                                        <div class="w-[10px] h-[10px] rounded-lg bg-gold"></div>
+                                    </div>
+                                    <div>
+                                        <h1 class="text-sm nunito">Phase 1</h1>
+                                        <h1 class="text-xs nunito opacity-75">Ideation and Foundation</h1>
+                                    </div>
+                                </div>
+        
+                                <div class="ml-3 mt-3 text-xs nunito text-gray-400 cursor-pointer">
+                                    <p class="mt-3 text-sm">• Develop ideas for MARGARET AI platform</p>
+                                    <p class="mt-3 text-sm">• Recruit a skilled and diverse team</p>
+                                    <p class="mt-3 text-sm">• Build the initial app framework</p>
+                                    <p class="mt-3 text-sm">• Expand the team to include key roles</p>
+                                </div>
+                            </div>
+                            <!-- PHASE 2 -->
+                            <div class="phaseTwo hidden items-start justify-between w-full md:w-[350px] relative flex-col">
+                                <div class="flex-center gap-2">
+                                    <div class="w-[25px] h-[25px] border-2 border-gold rounded-lg flex-center">
+                                        <div class="w-[10px] h-[10px] rounded-lg bg-gold"></div>
+                                    </div>
+                                    <div>
+                                        <h1 class="text-sm nunito">Phase 2</h1>
+                                        <h1 class="text-xs nunito opacity-75">Preparation and Pre-launch</h1>
+                                    </div>
+                                </div>
+        
+                                <div class="ml-3 mt-3 text-xs nunito text-gray-400 cursor-pointer">
+                                    <p class="mt-3 text-sm">• Finalize the whitepaper outlining MARGARET AI's vision and goals</p>
+                                    <p class="mt-3 text-sm">• Initiate pre-launch marketing campaigns to generate interest and anticipation</p>
+                                    <p class="mt-3 text-sm">• Release the Decentralized Application (DAPP)</p>
+                                    <p class="mt-3 text-sm">• Complete team Know Your Customer (KYC) procedures</p>
+                                    <p class="mt-3 text-sm">• Begin development of smart contracts for platform operations</p>
+                                    <p class="mt-3 text-sm">• Conduct thorough audits of smart contracts for security and efficiency</p>
+                                    <p class="mt-3 text-sm">• Initiate public presale to raise funds for further development</p>
+                                    <p class="mt-3 text-sm">• Announce airdrop events to distribute tokens and incentivize community involvement</p>
+                                </div>
+                            </div>
+                            <!-- PHASE 3 -->
+                            <div class="phaseThree hidden items-start justify-between w-full md:w-[350px] relative flex-col">
+                                <div class="flex-center gap-2">
+                                    <div class="w-[25px] h-[25px] border-2 border-gold rounded-lg flex-center">
+                                        <div class="w-[10px] h-[10px] rounded-lg bg-gold"></div>
+                                    </div>
+                                    <div>
+                                        <h1 class="text-sm nunito">Phase 3</h1>
+                                        <h1 class="text-xs nunito opacity-75">Launch and Initial Growth</h1>
+                                    </div>
+                                </div>
+        
+                                <div class="phase3 ml-3 mt-3 text-xs nunito text-gray-400 cursor-pointer">
+                                    <p class="mt-3 text-sm">• Execute post-launch marketing strategies to attract users and investors</p>
+                                    <p class="mt-3 text-sm">• Conduct Tier-1 audit to ensure platform integrity and security</p>
+                                    <p class="mt-3 text-sm">• Implement staking pool feature to enable token holders to earn rewards</p>
+                                    <p class="mt-3 text-sm">• Enhance the MARGARET AI website and update the whitepaper to version 2</p>
+                                    <p class="mt-3 text-sm">• Establish partnerships with reputable decentralized exchanges (DEX) to increase liquidity and accessibility</p>
+                                    <p class="mt-3 text-sm">• Pursue listing on centralized exchanges (CEX) for broader market exposure</p>
+                                    <p class="mt-3 text-sm">• Aim to achieve over 10,000 active users on the platform, fostering community engagement and user adoption</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+    
+        <!-- TOKENMOICS -->
+        <section id="tokenomics" class="py-20 w-full max-w-[1100px] mx-auto p-3 md:p-5 md:mt-20">
+            <div class="flex-center text-center text-3xl md:text-4xl nunito">
+                <h1 class="mb-10">Tokenomics</h1>
+            </div>
+            <div class="flex-center md:flex-row flex-col gap-10">
+                <div class="mx-auto flex items-center justify-around flex-col md:flex-row gap-5 w-[90%]">
+                    <div class="flex flex-col w-full md:w-auto gap-5">
+                        <div data-aos="fade-up" data-aos-duration="1500" class="flex-col flex shadow-lg w-[100%] md:w-[250px] px-5 py-5 radialtoken">
+                            <p class="captext monts mb-10">Token name</p>
+                            <p class="text-xl monts nunito">MARGARET AI</p>
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="1500" class="flex-col flex shadow-lg w-[100%] md:w-[250px] px-5 py-5 radialtoken">
+                            <p class="captext monts mb-10">Token Symbol</p>
+                            <p class="text-xl monts nunito">MARGARET</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col w-full md:w-auto gap-5">
+                        <div data-aos="fade-up" data-aos-duration="1500" class="flex-col flex shadow-lg w-[100%] md:w-[250px] px-5 py-5 radialtoken">
+                            <p class="captext monts mb-10">Token Supply</p>
+                            <p class="text-xl monts nunito">10 Million</p>
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="1500" class="flex-col flex shadow-lg w-[100%] md:w-[250px] px-5 py-5 radialtoken">
+                            <p class="captext monts mb-10">Total Tax</p>
+                            <p class="text-xl monts nunito">0%</p>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="relative flex-center w-[80%] max-w-[400px] mx-auto" id="chart--container">
+                    <p class="center-btn monts text-2xl shadow-xl">MARGARET</p>
+                    <canvas id="myChart" width="400" height="400"></canvas>
+                </div>
+            </div>
+        </section>
+    
+        <!-- FAQ -->
+        <section id="faq" class="relative pt-14 lg:pt-40 mx-2">
+            <div class="mb-10 max-w-[800px] w-[95%] mx-auto">
+                <h1 class="text-3xl md:text-4xl nunito text-center flex-center flex-col md:flex-row mb-10">FAQ</h1>
+                <div data-aos="fade-up" data-aos-duration="3000">
+                    <div onclick="displayFaq('faq1')" class="nunito faq1d">
+                        <div class="radialtoken mt-4 rounded-md p-5 flex items-center gap-2 cursor-pointer">
+                            <img src="images/plus.svg" alt="plus" class="h-7">
+                            <h1 class="text-md md:text-lg opacity-70">What is MARGARET AI?</h1>
+                        </div>
+                        <p class="p-5 hidden faq1">MARGARET AI is an advanced artificial intelligence platform that offers a wide range of
+                            solutions, including chatbot development, image generation, and video editing. It leverages cutting-edge AI
+                            technologies to empower businesses and individuals with innovative tools for various applications.</p>
+                    </div>
+                    <div onclick="displayFaq('faq2')" class="nunito faq2d">
+                        <div class="radialtoken mt-4 rounded-md p-5 flex items-center gap-2 cursor-pointer">
+                            <img src="images/plus.svg" alt="plus" class="h-7">
+                            <h1 class="text-md md:text-lg opacity-70">How does MARGARET AI work?</h1>
+                        </div>
+                        <p class="p-5 text-md anim-hidden faq2">
+                            MARGARET AI utilizes natural language processing (NLP), machine learning (ML), computer vision, and other AI
+                            algorithms to perform tasks such as understanding user queries, generating content, and enhancing multimedia
+                            assets. Users can interact with MARGARET AI through an intuitive interface to access its features and
+                            capabilities.</p>
+                    </div>
+                
+                    <div onclick="displayFaq('faq3')" class="nunito faq3d">
+                        <div class="radialtoken mt-4 rounded-md p-5 flex items-center gap-2 cursor-pointer">
+                            <img src="images/plus.svg" alt="plus" class="h-7">
+                            <h1 class="text-md md:text-lg opacity-70">What are the key features of MARGARET AI?</h1>
+                        </div>
+                        <div class="p-5 hidden faq3">
+                            <p class="text-md">Some key features of MARGARET AI include:</p>
+                            <div class="p-5 space-y-1">
+                                <p class="text-md">• Chatbot development and customer support.</p>
+                                <p class="text-md">• Image generation and enhancement.</p>
+                                <p class="text-md">• Video generation and editing</p>
+                                <p class="text-md">• Content personalization and optimization</p>
+                                <p class="text-md">• Data analysis and insights generation.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div onclick="displayFaq('faq4')" class="nunito faq4d">
+                        <div class="radialtoken mt-4 rounded-md p-5 flex items-center gap-2 cursor-pointer">
+                            <img src="images/plus.svg" alt="plus" class="h-7">
+                            <h1 class="text-md md:text-lg opacity-70">How can MARGARET AI benefit businesses?</h1>
+                        </div>
+                        <div class="p-5 hidden faq4">
+                            <p class="text-md">MARGARET AI can benefit businesses in various ways, such as:</p>
+                            <div class="p-5 space-y-1">
+                                <p class="text-md">• Improving customer engagement and support operations</p>
+                                <p class="text-md">• Enhancing content creation processes for marketing and branding</p>
+                                <p class="text-md">• Streamlining data analysis and decision-making</p>
+                                <p class="text-md">• Optimizing workflow automation and efficiency</p>
+                                <p class="text-md">• Driving innovation and competitiveness in the digital landscape</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div onclick="displayFaq('faq5')" class="nunito faq5d">
+                        <div class="radialtoken mt-4 rounded-md p-5 flex items-center gap-2 cursor-pointer">
+                            <img src="images/plus.svg" alt="plus" class="h-7">
+                            <h1 class="text-md md:text-lg opacity-70">Is MARGARET AI suitable for all industries?</h1>
+                        </div>
+                        <p class="p-5 text-md anim-hidden faq5">Yes, MARGARET AI is designed to be versatile and adaptable to different
+                            industries and use cases. Whether you're in e-commerce, healthcare, finance, education, or any other sector,
+                            MARGARET AI can provide tailored solutions to meet your specific needs and objectives.</p>
+                    </div>
+                    <!-- <div onclick="displayFaq('faq6')" class="nunito faq6d">
+                        <div class="radialtoken mt-4 rounded-md p-5 flex items-center gap-2 cursor-pointer">
+                            <img src="/assets/plus.svg" alt="plus" class="h-7">
+                            <h1 class="text-md md:text-lg opacity-70">How secure is MARGARET AI?</h1>
+                        </div>
+                        <p class="p-5 text-md anim-hidden faq6">
+                            MARGARET AI prioritizes data security and privacy, implementing robust encryption protocols and compliance
+                            measures to safeguard user data. We adhere to industry best practices and standards to ensure the
+                            confidentiality, integrity, and availability of our platform and services.</p>
+                    </div>
+                    <div onclick="displayFaq('faq7')" class="nunito faq6d">
+                        <div class="radialtoken mt-4 rounded-md p-5 flex items-center gap-2 cursor-pointer">
+                            <img src="/assets/plus.svg" alt="plus" class="h-7">
+                            <h1 class="text-md md:text-lg opacity-70">Can I integrate MARGARET AI with my existing systems?</h1>
+                        </div>
+                        <p class="p-5 text-md anim-hidden faq7">Yes, MARGARET AI offers flexible integration options to seamlessly integrate with existing systems and workflows. Whether you're using third-party software, APIs, or custom solutions, MARGARET AI can be integrated to complement and enhance your existing infrastructure.</p>
+                    </div>
+                    <div onclick="displayFaq('faq8')" class="nunito faq6d">
+                        <div class="radialtoken mt-4 rounded-md p-5 flex items-center gap-2 cursor-pointer">
+                            <img src="/assets/plus.svg" alt="plus" class="h-7">
+                            <h1 class="text-md md:text-lg opacity-70">What support and resources are available for MARGARET AI users?</h1>
+                        </div>
+                        <p class="p-5 text-md anim-hidden faq8">MARGARET AI provides comprehensive support and resources for users, including documentation, tutorials, developer tools, and dedicated customer support channels. Our team is committed to assisting users at every stage of their journey with MARGARET AI, from onboarding and implementation to ongoing support and optimization.</p>
+                    </div>
+                    <div onclick="displayFaq('faq9')" class="nunito faq6d">
+                        <div class="radialtoken mt-4 rounded-md p-5 flex items-center gap-2 cursor-pointer">
+                            <img src="/assets/plus.svg" alt="plus" class="h-7">
+                            <h1 class="text-md md:text-lg opacity-70">How can I get started with MARGARET AI?</h1>
+                        </div>
+                        <p class="p-5 text-md anim-hidden faq9">To get started with MARGARET AI, you can visit our website and you'll have access to our platform and can explore its features, tools, and resources. If you have specific requirements or inquiries, feel free to reach out to our team for assistance and guidance.</p>
+                    </div>
+                    <div onclick="displayFaq('faq10')" class="nunito faq6d">
+                        <div class="radialtoken mt-4 rounded-md p-5 flex items-center gap-2 cursor-pointer">
+                            <img src="/assets/plus.svg" alt="plus" class="h-7">
+                            <h1 class="text-md md:text-lg opacity-70">How can I stay updated on MARGARET AI's latest developments and updates?</h1>
+                        </div>
+                        <p class="p-5 text-md anim-hidden faq10">You can stay updated on MARGARET AI's latest developments, updates, and announcements by following us on our official social media channels, subscribing to our newsletter, and regularly checking our website for news and blog posts. We also encourage active participation in our community forums and events to stay connected with fellow users and enthusiasts.</p>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+    
+        <!-- FREE AI SECTION -->
+        <section class="w-[90%] max-w-[1000px] mx-auto h-[400px] md:h-[600px] my-10 md:my-20 rounded-xl relative">
+            <img src="images/MARGARETd.png" class="absolute w-full h-full object-cover opacity-50 md:opacity-20">
+            <div class="centered-abs z-20 w-full">
+                <div data-aos="fade-up" data-aos-duration="1500" class="flex-center flex-col w-full">
+                    <h1 class="text-2xl nunito text-center opacity-40">Get started with</h1>
+                    <h1 class="text-3xl text-center monts mb-10">MARGARET AI for free</h1>
+                    <div class="flex-center gap-7 w-full">
+                        <a href="https://app.MARGARET.ai" class="a aB py-2 text-white block text-center dmsans text-sm relative w-full max-w-[140px] md:max-w-[180px] shadows-md shadow-gold bg-bblack bg-opacity-80">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            launch app
+                        </a>
+                        <a href="#" class="a aB py-2 text-white block text-center dmsans text-sm relative w-full max-w-[140px] md:max-w-[180px] shadows-md shadow-gold bg-bblack bg-opacity-80">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Use bot
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="blur bg-bblack bg-opacity-80 w-full h-full"></div>
+        </section>
+    
+        <!-- FOOTER -->
+        <footer class="py-20 w-full p-5 radial raidalup">
+            <div class="max-w-[1100px] mx-auto ">
+                <div class="flex md:items-start items-center justify-between flex-col md:flex-row gap-10">
+                    <div class="flex items-start justify-between w-full max-w-[250px] md:max-w-[500px] md:justify-around gap-10 flex-1">
+                        <div class="flex-center flex-col gap-2">
+                            <img src="images/logo.png" alt="logo" class="h-9 md:h-11 object-contain">
+                            <a href="mailto:info@MARGARET.ai" class="text-gold text-center nunito">info@MARGARET.ai</a>
+                        </div>
+                        <div class="nunito space-y-1 text-sm text-gray-300 flex flex-col">
+                            <a href="#">Buy $MARGARET</a>
+                            <a href="#">Tokenomics</a>
+                            <a href="#">Roadmap</a>
+                        </div>
+                    </div>
+                    <div class="flex items-start justify-between w-full max-w-[250px] md:max-w-[500px] md:justify-around gap-10 flex-1">
+                        <div class="nunito space-y-1 text-sm text-gray-300 flex flex-col">
+                            <a class="" href="https://app.MARGARET.ai">Launch App</a>
+                            <a class="" href="#">Launch Bot</a>
+                            <a class="" href="https://whitepaper.MARGARET.ai/">Whitepaper</a>
+                        </div>
+                        <div class="nunito space-y-1 text-sm text-gray-300 flex flex-col w-[33%] md:w-auto">
+                            <a href="https://x.com/margaret_ai">Twitter</a>
+                            
+                            <a href="#">FAQ</a>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- WHITEPAPER -->
+    <section class="hidden whitepaper pt-20 radial min-h-screen">
+        <div class="max-w-[800px] mx-auto w-full p-5">
+            <h1 class="text-5xl nunito underline my-10">Whitepaper</h1>
+            <div class="text-gray-300 dmsans">
+                <h1 class="text-white">1. Introduction:</h1>
+                <p class="text-sm mt-2">MARGARET AI is a groundbreaking AI platform aimed at transforming industries through advanced chatbot development, image generation and enhancement, and video generation and editing capabilities. This whitepaper provides an overview of MARGARET AI's vision, mission, tokenomics, and key features.</p>
+                <br><br>
+                
+                <h1 class="text-white">2. Vision and Mission:</h1>
+                <p class="text-sm mt-2">At MARGARET AI, our vision is to democratize access to advanced AI technologies and empower businesses and individuals to leverage AI for innovation and growth. We aim to build a collaborative ecosystem where AI solutions are accessible, efficient, and beneficial for all stakeholders. Our mission is to drive positive change in the global AI landscape by providing cutting-edge tools and resources that enable users to unleash the full potential of AI.</p>
+                <br><br>
+
+                <h1 class="text-white">3. Tokenomics:</h1>
+                <p class="text-sm mt-2">MARGARET AI introduces the MARGARET token (MARGARET) as the native utility token of the platform. With a total token supply of 10 million MARGARET tokens, our tokenomics are designed to ensure fair distribution and incentivize platform usage. The MARGARET token will serve various purposes within the MARGARET AI ecosystem, including but not limited to:</p>
+                <p class="pl-5 text-sm mt-2 opacity-80">- Accessing premium features and services on the platform</p>
+                <p class="pl-5 text-sm mt-2 opacity-80">- Incentivizing developers and contributors for their contributions</p>
+                <p class="pl-5 text-sm mt-2 opacity-80">- Facilitating transactions and payments within the ecosystem</p>
+                <p class="pl-5 text-sm mt-2 opacity-80">- Participating in governance and decision-making processes</p>
+                <br><br>
+
+                <h1 class="text-white mb-3">4. Key Features:</h1>
+                <div class="pl-4">
+                    <h1 class="text-white">- Chatbot Development and Customer Support:</h1>
+                    <p class="pl-5 text-sm mt-2 opacity-80">MARGARET AI enables businesses to develop advanced chatbots for customer support and interaction. Leveraging its natural language processing (NLP) capabilities, MARGARET AI-powered chatbots can understand and respond to user queries, provide personalized assistance, and automate routine tasks. This enhances customer engagement, improves response times, and streamlines support operations across websites, messaging platforms, and mobile apps.
+                    </p>
+                    <br>
+                    <h1 class="text-white">- Chatbot Development and Customer Support:</h1>
+                    <p class="pl-5 text-sm mt-2 opacity-80">MARGARET AI offers powerful image generation and enhancement tools for various purposes, including marketing campaigns, social media posts, and website content. Using generative adversarial networks (GANs) and advanced algorithms, MARGARET AI can create realistic and high-quality images from scratch or modify existing images to meet specific requirements. This includes tasks like generating product visuals, creating custom graphics, and enhancing photo quality through restoration and manipulation techniques.</p>
+                    <br>
+                    <h1 class="text-white">- Image Generation and Enhancement:</h1>
+                    <p class="pl-5 text-sm mt-2 opacity-80">MARGARET AI offers powerful image generation and enhancement tools for various purposes, including marketing campaigns, social media posts, and website content. Using generative adversarial networks (GANs) and advanced algorithms, MARGARET AI can create realistic and high-quality images from scratch or modify existing images to meet specific requirements. This includes tasks like generating product visuals, creating custom graphics, and enhancing photo quality through restoration and manipulation techniques.</p>
+                    <br>
+                    <h1 class="text-white">- Video Generation and Editing:</h1>
+                    <p class="pl-5 text-sm mt-2 opacity-80">
+                        MARGARET AI simplifies video generation and editing processes for businesses and content creators. It can generate video content from text or scripts, create animated graphics and visual effects, and automate editing tasks such as trimming, cropping, and adding captions. MARGARET AI also enhances video quality, removes background noise, and optimizes videos for different platforms and resolutions. This enhances video production efficiency and improves overall quality for marketing efforts.</p>
+                </div>
+                <br><br>
+                <h1 class="text-white">5. Conclusion:</h1>
+                <p class="text-sm pl-5 opacity-80 mt-2">MARGARET AI is poised to revolutionize industries through its advanced AI capabilities, user-friendly interface, and robust tokenomics. By democratizing access to AI technologies and providing innovative solutions for chatbot development, image generation, and video editing, MARGARET AI aims to drive innovation and empower users to achieve their goals in the evolving digital landscape.</p>
+                <br><br>
+                <p class="mt-5 mb-20">This whitepaper outlines MARGARET AI's vision, mission, tokenomics, and key features, providing stakeholders with a comprehensive overview of the platform's capabilities and potential impact. Additional technical details and specifications can be included in the full whitepaper document.</p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- AI BOT -->
+    <form class="aiBot chatForm hidden justify-between flex-col gap-2 pt-24 mb-5 border-opacity-30 max-w-[650px] mx-auto p-5">
+        <div class="w-full flex-center flex-col gap-2">
+            <h1 class="text-3xl md:text-[2.5rem] nunito">Talk to <b>MARGARET</b> </h1>
+            <select class="product bg-transparent opacity-50 border-none outline-none focus:outline-none">
+                <option value="text">Text to text</option>
+                <option value="image">Text to Image</option>
+                <option value="speech">Text to Speech</option>
+                <option value="video">Text to Video</option>
+            </select>
+            <div class="flex flex-col w-full h-[72vh] overflow-y-scroll justify-between">
+                <div class="w-full flex-col chatParent chatBody">
+                    <div class="border border-white border-opacity-10 bg-[#00000074] p-3 w-[80%] max-w-[380px] rounded-xl my-7">
+                        <p class="dmsans text-sm text-gray-200 welcomeMsg">Hello, I am MARGARET, How can I help you?</p>
+                    </div>
+            
+                </div>
+                <div class="max-w-[650px] mx-auto w-[100%]">
+                    <div class="a aApp py-1 block text-center text-sm relative w-full md:px-4 mt-10 md:mt-20 shadows-md shadow-gold bg-bblack">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <textarea type="text" rows="1" placeholder="Message MARGARET" class="textArea p-3 md:p-4 w-full chatInput dmsans outline-none border-none !text-[16px] text-gray-300 bg-transparent resize-none !z-50"></textarea>
+                        <button type="submit" class="absolute right-2 top-3 md:top-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-ggreen">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="border border-gray-800 rounded-full w-full md:px-4 mt-10 md:mt-20 relative">
+        </div> -->
+    </form>
+
+<script>
+    const isWhitePaper = window.location.hostname == "whitepaper.MARGARET.ai"
+    const isApp = window.location.hostname == "app.MARGARET.ai";
+    var loadingAnimation = document.getElementById('loading-animation');
+    if (isWhitePaper) {
+        loadingAnimation.style.display = 'none';
+        document.querySelector('.homepage').classList.add('hidden');
+        document.querySelector('.whitepaper').classList.remove('hidden');
+        document.querySelector('nav').classList.remove('hidden');
+    } else {
+        window.addEventListener('load', function () {
+            // Hide the loading animation
+            loadingAnimation.style.display = 'none';
+            // Show the page content
+            document.querySelector('nav').classList.remove('hidden');
+            document.querySelector(isApp ? '.aiBot' : '.homepage').classList.remove('hidden');
+            isApp && document.querySelector('.aiBot').classList.add('flex');
+            isApp && document.querySelector('.videoBg').classList.remove('hidden');
+            AOS.init();
+        });
+    }
+</script>
+<script src="js/app.js"></script>
+<script src="js/chart.js"></script>
+<script src="js/ai.js"></script>
+
+</body></html>
